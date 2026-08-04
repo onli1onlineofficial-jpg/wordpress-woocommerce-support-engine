@@ -1,0 +1,51 @@
+[04-Aug-2026 09:14:11 UTC] PHP Warning: Undefined array key "product_id" in /wp-content/plugins/custom-checkout/includes/class-checkout.php on line 184
+
+[04-Aug-2026 09:14:12 UTC] PHP Notice: Trying to access array offset on value of type null in /wp-content/plugins/custom-checkout/includes/class-checkout.php on line 201
+
+[04-Aug-2026 09:14:15 UTC] PHP Deprecated: Creation of dynamic property WC_Custom_Checkout::$gateway is deprecated in /wp-content/plugins/custom-checkout/custom-checkout.php on line 58
+
+[04-Aug-2026 09:14:18 UTC] PHP Fatal error: Uncaught Error: Call to undefined function wc_get_order_status_name() in /wp-content/plugins/custom-checkout/includes/class-orders.php:92
+Stack trace:
+#0 /wp-includes/class-wp-hook.php(324): Custom_Checkout_Orders->process_order()
+#1 /wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1115): do_action()
+#3 /wp-content/plugins/woocommerce/includes/class-wc-form-handler.php(412): WC_Checkout->process_checkout()
+#4 /wp-includes/class-wp-hook.php(324): WC_Form_Handler::checkout_action()
+#5 /wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#6 /wp-includes/class-wp.php(418): do_action_ref_array()
+#7 /wp-includes/class-wp.php(819): WP->main()
+#8 /wp-includes/functions.php(1342): WP->parse_request()
+#9 /index.php(17): require('/wp-blog-header...')
+thrown in /wp-content/plugins/custom-checkout/includes/class-orders.php on line 92
+
+[04-Aug-2026 09:18:46 UTC] PHP Warning: mysqli_real_connect(): (HY000/1045): Access denied for user 'wordpress_user'@'localhost' (using password: YES)
+
+[04-Aug-2026 09:18:47 UTC] WordPress database error Table 'wordpress.wp_wc_orders' doesn't exist for query
+SELECT * FROM wp_wc_orders WHERE status='wc-processing'
+made by require('wp-blog-header.php'),
+require_once('wp-includes/template-loader.php'),
+include('wp-content/themes/storefront/functions.php')
+
+[04-Aug-2026 09:24:13 UTC] PHP Warning: Undefined variable $shipping_total in /wp-content/themes/storefront-child/functions.php on line 312
+
+[04-Aug-2026 09:26:21 UTC] PHP Warning: Cannot modify header information - headers already sent by (output started at /wp-content/themes/storefront-child/functions.php:312)
+
+[04-Aug-2026 09:28:09 UTC] PHP Fatal error: Allowed memory size of 268435456 bytes exhausted (tried to allocate 65536 bytes) in /wp-includes/class-wp-query.php on line 4058
+
+[04-Aug-2026 09:33:52 UTC] PHP Warning: REST API request failed with status 401 Unauthorized while accessing /wp-json/wc/v3/orders
+
+[04-Aug-2026 09:36:14 UTC] PHP Notice: Undefined index "billing_email" in /wp-content/plugins/custom-checkout/includes/class-api.php on line 143
+
+[04-Aug-2026 09:40:51 UTC] PHP Warning: Session cannot be started after headers have already been sent in /wp-content/plugins/custom-checkout/includes/session.php on line 48
+
+[04-Aug-2026 09:45:03 UTC] PHP Warning: Invalid argument supplied for foreach() in /wp-content/plugins/custom-checkout/includes/class-cart.php on line 275
+
+[04-Aug-2026 09:49:28 UTC] PHP Fatal error: Maximum execution time of 60 seconds exceeded in /wp-content/plugins/product-importer/import.php on line 411
+
+[04-Aug-2026 09:55:40 UTC] PHP Warning: SSL certificate verification failed while connecting to external API endpoint https://api.example.com/orders
+
+[04-Aug-2026 09:58:16 UTC] PHP Notice: Undefined offset: 0 in /wp-content/plugins/custom-checkout/includes/class-validation.php on line 88
+
+[04-Aug-2026 10:02:31 UTC] PHP Warning: cURL error 28: Operation timed out after 30001 milliseconds while requesting https://payment-gateway.example.com/api/charge
+
+[04-Aug-2026 10:07:54 UTC] PHP Fatal error: Uncaught Exception: Payment gateway authentication failed in /wp-content/plugins/payment-gateway/includes/class-api.php on line 276
